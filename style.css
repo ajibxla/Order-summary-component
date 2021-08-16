@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+
+main{
+    background: var(--pale-blue);
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    border-radius: 25px;
+    height: 550px;
+    width: 65vw;
+    margin: auto;
+    background: white;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+
+}
+
+.section-img img{
+    border-radius:25px 25px 0 0 ;
+    width: 65vw;
+    height: 18vh;
+}
+
+.section-content{
+    width: 53vw;
+    margin: auto;
+    margin-top: 25px;
+    position: absolute;
+    left: 30px;
+    right: 30;
+}
+
+.content-header{
+    margin-bottom: 25px
+}
+
+.content-header h2{
+    margin-bottom: 16px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--dark-blue);
+
+}
+
+.content-header p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.section-pricing{
+    display: flex;
+    background: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 10px 7.5px 10px 7.5px;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.section-pricing img{
+    width: 50px;
+    height: 50px;
+    margin:0 20px 0 5px ;
+}
+
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.plan{
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.price{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.change a{
+    margin-left: 45px;
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.change a:hover{
+    color: #746bf1
+    ;
+    text-decoration: none;
+    transition: color ease-in-out 0.5s;
+}
+
+.section-payment{
+    display: grid;
+
+}
+.payment-btn{
+    background: var(--bright-blue);
+    border: none;
+    height: 50px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    box-shadow: 0px 20px 8px 0px rgba(56, 41, 224, 0.1);
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.payment-btn:hover{
+    background-color: #746bf1;
+    text-decoration: none;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.cancel-btn{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 80px;
+  
+   
+}
+
+.cancel-btn:hover{
+    color:var(--dark-blue);
+    transition: color ease-in-out 0.5s;
+}
+
+@media screen and (min-width:650px) {
+
+    
+
+    body{
+        background: url(./images/pattern-background-desktop.svg)  no-repeat;
+        /* background-color: var(--pale-blue); */
+        background: red;
+
+    }
+
+    main{
+        background: none;
+    }
+
+    section{
+        width: 50vw;
+    }
+
+    .section-img img{
+        border-radius:25px 25px 0 0 ;
+        width: 50vw;
+        height: 18vh;
+    }
+    
+    .section-content{
+        width: 40vw;
+        margin: auto;
+        margin-top: 25px;
+        position: absolute;
+        left: 30px;
+        right: 30;
+    }
+ 
+    .cancel-btn{
+        margin-left: 90px;
+    }
+
+    
+}
+
+@media screen and (min-width:900px) {
+
+    body{
+        background: url(./images/pattern-background-desktop.svg)  no-repeat;
+        background-color: var(--pale-blue);
+    }
+
+    main{
+        background: none;
+    }
+
+    section{
+        width: 27vw;
+    }
+
+    .section-img img{
+        border-radius:25px 25px 0 0 ;
+        width: 27vw;
+        height: 18vh;
+    }
+    
+    .section-content{
+        width: 22vw;
+        margin: auto;
+        margin-top: 25px;
+        position: absolute;
+        left: 30px;
+        right: 30;
+    }
+ 
+    .cancel-btn{
+        margin-left: 100px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
