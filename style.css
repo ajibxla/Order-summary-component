@@ -26,8 +26,8 @@ body{
 
 main{
     background: var(--pale-blue);
-    height: 80vh;
-    width: 80vw;
+    height: 750px;
+    width: 400px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -37,8 +37,8 @@ main{
 
 section{
     border-radius: 25px;
-    height: 550px;
-    width: 65vw;
+    height: 555px;
+    width: 330px;
     margin: auto;
     background: white;
     font-family: 'Red Hat Display', sans-serif;
@@ -48,17 +48,14 @@ section{
 
 .section-img img{
     border-radius:25px 25px 0 0 ;
-    width: 65vw;
-    height: 18vh;
+    width: 330px;
+    height: 165px;
 }
 
 .section-content{
-    width: 53vw;
+    width: 265px;
     margin: auto;
     margin-top: 25px;
-    position: absolute;
-    left: 30px;
-    right: 30;
 }
 
 .content-header{
@@ -66,8 +63,9 @@ section{
 }
 
 .content-header h2{
+    font-size: 1.4rem;
     margin-bottom: 16px;
-    font-weight: 900;
+    font-weight:900;
     text-align: center;
     color: var(--dark-blue);
 
@@ -143,7 +141,7 @@ section{
     color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
     box-shadow: 0px 20px 8px 0px rgba(56, 41, 224, 0.1);
     cursor: pointer;
     outline: none;
@@ -172,48 +170,8 @@ section{
     transition: color ease-in-out 0.5s;
 }
 
-@media screen and (min-width:650px) {
 
-    
-
-    body{
-        background: url(./images/pattern-background-desktop.svg)  no-repeat;
-        /* background-color: var(--pale-blue); */
-        background: red;
-
-    }
-
-    main{
-        background: none;
-    }
-
-    section{
-        width: 50vw;
-    }
-
-    .section-img img{
-        border-radius:25px 25px 0 0 ;
-        width: 50vw;
-        height: 18vh;
-    }
-    
-    .section-content{
-        width: 40vw;
-        margin: auto;
-        margin-top: 25px;
-        position: absolute;
-        left: 30px;
-        right: 30;
-    }
- 
-    .cancel-btn{
-        margin-left: 90px;
-    }
-
-    
-}
-
-@media screen and (min-width:900px) {
+@media screen and (min-width:600px) {
 
     body{
         background: url(./images/pattern-background-desktop.svg)  no-repeat;
@@ -224,32 +182,8 @@ section{
         background: none;
     }
 
-    section{
-        width: 27vw;
-    }
-
-    .section-img img{
-        border-radius:25px 25px 0 0 ;
-        width: 27vw;
-        height: 18vh;
-    }
-    
-    .section-content{
-        width: 22vw;
-        margin: auto;
-        margin-top: 25px;
-        position: absolute;
-        left: 30px;
-        right: 30;
-    }
- 
-    .cancel-btn{
-        margin-left: 100px;
-    }
-
     
 }
-
 
 
 
