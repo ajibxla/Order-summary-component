@@ -26,7 +26,7 @@ body{
 }
 
 main{
-
+    background: var(--pale-blue);
     min-height: 750px;
     width: 400px;
     margin: auto;
